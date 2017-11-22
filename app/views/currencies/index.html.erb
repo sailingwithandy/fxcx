@@ -1,0 +1,10 @@
+<h1>This is the index page</h1>
+
+<h1><%= @title %></h1>
+
+<% @currencies.each do |x| %>
+<%= link_to x.money, currency_path(x) %>
+<% end %>
+
+
+<%= link_to "another page", new_currency_path %> 
